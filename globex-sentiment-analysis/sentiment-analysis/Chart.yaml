@@ -17,3 +17,6 @@ dependencies:
   - name: reviews-db
     version: 0.1.0
     repository: file://reviews-db
+  - name: products-review
+    version: 0.1.0
+    repository: file://products-review
