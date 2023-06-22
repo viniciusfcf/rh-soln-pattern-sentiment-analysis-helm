@@ -5,6 +5,8 @@ metadata:
   labels:
     {{- include "persist-reviews.labels" . | nindent 4 }}
     app.openshift.io/runtime: quarkus
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   template:
     metadata:
