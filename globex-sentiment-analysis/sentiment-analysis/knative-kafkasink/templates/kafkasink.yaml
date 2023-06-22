@@ -5,6 +5,7 @@ kind: KafkaSink
 metadata:
   name: {{ .name }}
   annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     {{- include "knative-kafkasink.argocd-syncwave" $ | nindent 4 }}
 spec:
   bootstrapServers:
