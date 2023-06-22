@@ -10,4 +10,7 @@ dependencies:
     repository: file://kafka-topics
   - name: knative-kafkasink
     version: 0.1.0
-    repository: file://knative-kafkasink 
+    repository: file://knative-kafkasink
+  - name: knative-broker
+    version: 0.1.0
+    repository: file://knative-broker
