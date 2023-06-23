@@ -8,13 +8,6 @@ triggers:
       type: review-moderated-event
     service: persist-reviews
     uri: /review/submit
-  - name: moderate-review-trigger
-    broker: *broker
-    filter:
-      source: review-moderated
-      type: review-moderated-event
-    service: persist-reviews
-    uri: /review/submit
   - name: moderate-reviews-trigger
     broker: *broker
     filter:
