@@ -26,3 +26,6 @@ dependencies:
   - name: persist-reviews
     version: 0.1.0
     repository: file://persist-reviews
+  - name: aiml-moderate-reviews
+    version: 0.1.0
+    repository: file://aiml-moderate-reviews
