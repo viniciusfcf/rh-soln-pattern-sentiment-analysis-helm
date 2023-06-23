@@ -1,24 +1,3 @@
-{{- range .Values.kafkasink }}
----
-apiVersion: eventing.knative.dev/v1alpha1
-kind: KafkaSink
-metadata:
-  name: {{ .name }}
-  annotations:
-    {{- include "knative-broker.argocd-syncwave" $ | nindent 4 }}
-spec:
-  bootstrapServers:
-    - {{ $.Values.kafka.bootstrapServer }}
-  topic: {{ .topic }}
-  numPartitions: {{ .partitions }}
-  contentMode: {{ .contentMode }}
-  auth:
-     secret:
-       ref:
-         name: {{ include "knative-broker.name" $ }}-secret
-{{- end }}
-
-
 apiVersion: eventing.knative.dev/v1
 kind: Broker
 metadata:

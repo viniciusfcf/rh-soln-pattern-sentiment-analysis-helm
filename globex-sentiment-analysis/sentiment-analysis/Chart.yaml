@@ -17,6 +17,9 @@ dependencies:
   - name: knative-broker
     version: 0.1.0
     repository: file://knative-broker
+  - name: knative-kafkasource
+    version: 0.1.0
+    repository: file://knative-kafkasource
   - name: reviews-db
     version: 0.1.0
     repository: file://reviews-db
