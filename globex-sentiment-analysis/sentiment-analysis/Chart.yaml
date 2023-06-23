@@ -29,3 +29,6 @@ dependencies:
   - name: aiml-moderate-reviews
     version: 0.1.0
     repository: file://aiml-moderate-reviews
+  - name: aiml-sentiment-reviews
+    version: 0.1.0
+    repository: file://aiml-sentiment-reviews
