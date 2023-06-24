@@ -23,9 +23,9 @@ dependencies:
   - name: reviews-db
     version: 0.1.0
     repository: file://reviews-db
-  - name: products-review
+  - name: product-reviews
     version: 0.1.0
-    repository: file://products-review
+    repository: file://product-reviews
   - name: persist-reviews
     version: 0.1.0
     repository: file://persist-reviews
