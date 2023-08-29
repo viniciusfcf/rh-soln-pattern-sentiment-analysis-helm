@@ -1,4 +1,4 @@
-name-override: globex-web
+nameOverride: globex-web
 
 replicaCount: 1
 
